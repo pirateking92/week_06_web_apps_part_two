@@ -1,0 +1,17 @@
+<!-- GET /artists -->
+
+<html>
+  <head></head>
+  <body>
+    <h1>Artists</h1>
+    
+    {% for artist in artists %}
+      <div>
+        <h2 style="font-size: 2rem">
+        <br>
+        <a href="/artists/{{artist.id}}">{{artist.name}}</a><br></h2>
+        Genre: {{artist.genre}}
+      </div>
+    {% endfor %}
+  </body>
+</html>
